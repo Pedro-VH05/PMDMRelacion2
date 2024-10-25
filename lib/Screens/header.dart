@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
+  const ProfileHeader({super.key});
+
   @override
   Widget build(BuildContext context) {
     return const Padding(
@@ -38,7 +40,7 @@ class ProfileHeader extends StatelessWidget {
           SizedBox(height: 4, width: 5),
           Text(
             '"Yo sí se lo que me deparará el futuro."',
-            style: TextStyle(fontSize: 14, color: Colors.grey),
+            style: TextStyle(fontSize: 16, color: Colors.black54),
           ),
         ],
       ),
@@ -58,12 +60,12 @@ class _StatisticWidget extends StatelessWidget {
       children: [
         Text(
           count,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 4, width: 5),
+        const SizedBox(height: 4, width: 5),
         Text(
           label,
-          style: TextStyle(fontSize: 12, color: Colors.grey),
+          style: const TextStyle(fontSize: 16, color: Colors.grey),
         ),
       ],
     );

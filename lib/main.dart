@@ -8,6 +8,8 @@ import 'package:flutter_instagram/Screens/stories.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,10 +21,14 @@ class MyApp extends StatelessWidget {
           children: [
             ProfileHeader(),
             EditProfileButton(),
+            const SizedBox(height: 10),
             StoriesSection(),
+            const SizedBox(height: 20),
             PhotosGrid(),
           ],
         ),
+
+        bottomNavigationBar: InstagramFooter(),
       ),
     );
   }

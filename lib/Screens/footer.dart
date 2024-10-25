@@ -1,31 +1,23 @@
 import 'package:flutter/material.dart';
 
 class InstagramFooter extends StatelessWidget {
+  const InstagramFooter({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Inicio',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.search),
-          label: 'Buscar',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.add_box_outlined),
-          label: 'Nuevo',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.favorite_border),
-          label: 'Likes',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.person_outline),
-          label: 'Perfil',
-        ),
-      ],
+    return Container(
+      height: 50, // Ajusta la altura que prefieras
+      color: Colors.white, // Color de fondo opcional
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: const [
+          Icon(Icons.home, color: Colors.black),
+          Icon(Icons.search, color: Colors.black),
+          Icon(Icons.add_box_outlined, color: Colors.black),
+          Icon(Icons.favorite_border, color: Colors.black),
+          Icon(Icons.person_outline, color: Colors.black),
+        ],
+      ),
     );
   }
 }
